@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/fragmentSignin">
+
+    <fragment
+        tools:layout="@layout/fragment_signin"
+        android:id="@+id/fragmentSignin"
+        android:name="com.example.boomy.ui.auth.signin.SigninFragment">
+        <action
+            android:id="@+id/action_fragment_signup"
+            app:destination="@id/fragmentSignup" />
+    </fragment>
+
+    <fragment
+        tools:layout="@layout/fragment_signup"
+        android:id="@+id/fragmentSignup"
+        android:name="com.example.boomy.ui.auth.signup.SignupFragment"/>
+
+</navigation>

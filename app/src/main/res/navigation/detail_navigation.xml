@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentDetail"
+    android:id="@+id/detail_navigation">
+
+    <fragment android:id="@+id/fragmentDetail"
+        android:name="com.example.boomy.ui.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail"
+        android:label="Detail" />
+
+</navigation>
